@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Alsedig</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+            overflow-x: hidden;
+            background: #111; 
+        }
+        header {
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            color: white;
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            font-size: 1.25rem;
+            margin-right: 1.25rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+        }
+        nav ul li a:hover,
+        nav ul li a:active {
+            color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+            transform: scale(1.15);
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+        .main-content {
+            text-align: center;
+            padding: 5rem 10%;
+            max-width: 900px;
+            margin: auto;
+        }
+        .main-content h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: white;
+        }
+        .main-content p {
+            color: white;
+            font-weight: bold;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+        span {
+            color: #b74b4b;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alsedig BenOmar</h1>
+        <i class="fas fa-bars menu-toggle"></i>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr><br><hr>
+    <main>
+        <div class="main-content">
+            <h1>I'm a <span>Software Engineer</span> and <span>Frontend Dev</span></h1>
+            <p>Hi, I’m Sedig, a software engineer with expertise in HTML, CSS, JavaScript, C, and Python. I specialize in building sleek, high-performance websites with modern aesthetics and seamless user experiences. Passionate about coding and innovation, I’m always exploring new technologies to create extraordinary digital experiences.</p>
+        </div><br><br>
+
+    </main>
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+    document.querySelector("nav ul").classList.toggle("active");
+    });
+
+</script>
+</body>
+</html>
